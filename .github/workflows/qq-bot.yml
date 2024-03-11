@@ -1,0 +1,21 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SOURCE: xiao-mai/*
+          REMOTE_HOST: '39.101.136.131'
+          REMOTE_USER: root
+          TARGET: /www/wwwroot/xiao-mai.matrix-studio.top
