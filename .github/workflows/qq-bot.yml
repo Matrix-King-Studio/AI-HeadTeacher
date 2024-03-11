@@ -18,4 +18,4 @@ jobs:
           SOURCE: xiao-mai/*
           REMOTE_HOST: '39.101.136.131'
           REMOTE_USER: root
-          TARGET: /www/wwwroot/xiao-mai.matrix-studio.top
+          TARGET: /www/wwwroot/xiao-mai.matrix-studio.top/xiao-mai
