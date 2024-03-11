@@ -1,12 +1,12 @@
 import nonebot
-from nonebot.adapters.console import Adapter as ConsoleAdapter  # 避免重复命名
+from nonebot.adapters.qq import Adapter as qqAdapter  # 避免重复命名
 
 # 初始化 NoneBot
 nonebot.init()
 
 # 注册适配器
 driver = nonebot.get_driver()
-driver.register_adapter(ConsoleAdapter)
+driver.register_adapter(qqAdapter)
 
 # 在这里加载插件
 nonebot.load_builtin_plugins("echo")  # 内置插件

@@ -27,7 +27,7 @@ pipx install nb-cli
 nb create
 ```
 
-注意 QQ 官方机器人驱动器要选择
+注意 QQ 官方机器人驱动器要选择 HTTPX 和 WebSocket 两个。
 
 ### 运行项目
 
