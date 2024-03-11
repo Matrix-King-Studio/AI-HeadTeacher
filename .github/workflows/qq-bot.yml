@@ -15,8 +15,7 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rlgoDzvc -i"
-          SOURCE: xiao-mai/*
+          SOURCE: xiao-mai/
           REMOTE_HOST: '39.101.136.131'
           REMOTE_USER: root
           TARGET: /www/wwwroot/xiao-mai.matrix-studio.top/xiao-mai
